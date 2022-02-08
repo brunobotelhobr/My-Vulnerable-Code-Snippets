@@ -15,5 +15,6 @@ class Example1
    }
 }
 
+#Test
 
 $user_data = unserialize($_GET['data']);
