@@ -5,7 +5,7 @@ class Example1
 
    function __construct()
    {
-      // some PHP code here...
+      // some PHP code...
    }
 
    function __destruct()
