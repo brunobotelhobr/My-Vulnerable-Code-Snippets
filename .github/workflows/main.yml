@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run Trivy vulnerability scanner with rootfs command
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action:latest
         with:
           scan-type: 'rootfs'
           scan-ref: 'rootfs-example-binary'
