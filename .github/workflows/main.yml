@@ -18,7 +18,7 @@ jobs:
         with:
           scan-type: 'fs'
           format: 'table'
-          exit-code: '1'
+          exit-code: '0' # 0 will not fail and 1 will
           ignore-unfixed: true
           vuln-type: 'os,library'
           severity: 'MEDIUM,HIGH,CRITICAL'
@@ -28,7 +28,7 @@ jobs:
         with:
           scan-type: 'conf'
           format: 'table'
-          exit-code: '1'
+          exit-code: '0' # 0 will not fail and 1 will
           ignore-unfixed: true
           vuln-type: 'os,library'
           severity: 'MEDIUM,HIGH,CRITICAL'   
