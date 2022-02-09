@@ -62,7 +62,7 @@ Failures: 8 (HIGH: 6, CRITICAL: 1)
 +                                          +------------+------------------------------------------+          +--------------------------------------------------------+
 |                                          |   AWS025   | API Gateway domain name uses outdated    |          | Resource                                               |
 |                                          |            | SSL/TLS protocols.                       |          | 'aws_api_gateway_domain_name.empty_security_policy'    |
-|                                          |            |                                          |          | defines outdated SSL/TLS  policies (not using           |
+|                                          |            |                                          |          | defines outdated SSL/TLS policies (not using           |
 |                                          |            |                                          |          | TLS_1_2). -->tfsec.dev/docs/aws/AWS025/                |
 +                                          +            +                                          +          +--------------------------------------------------------+
 |                                           |            |                                          |          | Resource                                               |
