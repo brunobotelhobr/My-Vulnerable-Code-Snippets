@@ -21,7 +21,7 @@ jobs:
           #default table, but can be sarif
           format: 'table'
           # Save file?
-          output: 'trivy-results.sarif'
+          # output: 'trivy-results.sarif'
           # Break the Pipeline? 1 = yes, 0 = no
           exit-code: '0' 
           # ignore unfixed vulnerabilities
