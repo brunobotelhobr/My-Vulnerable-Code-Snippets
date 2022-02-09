@@ -22,15 +22,3 @@ jobs:
           ignore-unfixed: true
           vuln-type: 'os,library'
           severity: 'MEDIUM,HIGH,CRITICAL'
-          
-      - name: Run Trivy vulnerability scanner FS
-        uses: aquasecurity/trivy-action@master
-        with:
-          scan-type: 'conf'
-          format: 'table'
-          exit-code: '0' # 0 will not fail and 1 will
-          ignore-unfixed: true
-          vuln-type: 'os,library'
-          severity: 'MEDIUM,HIGH,CRITICAL'   
-
-
