@@ -65,7 +65,7 @@ Failures: 8 (HIGH: 6, CRITICAL: 1)
 |                                          |            |                                          |          | defines outdated SSL/TLS  policies (not using           |
 |                                          |            |                                          |          | TLS_1_2). -->tfsec.dev/docs/aws/AWS025/                |
 +                                          +            +                                          +          +--------------------------------------------------------+
-|                                          |            |                                          |          | Resource                                               |
+|                                           |            |                                          |          | Resource                                               |
 |                                          |            |                                          |          | 'aws_api_gateway_domain_name.missing_security_policy'  |
 |                                          |            |                                          |          | should include security_policy (defaults to outdated   |
 |                                          |            |                                          |          | SSL/TLS policy). -->tfsec.dev/docs/aws/AWS025/         |
