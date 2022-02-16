@@ -1,0 +1,31 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Run Trivy vulnerability scanner FS
+        uses: aquasecurity/trivy-action@master
+        with:
+          # optional, default is image, but can be conf and fs
+          scan-type: 'fs'
+          #default table, but can be sarif
+          format: 'table'
+          # Save file?
+          # output: 'trivy-results.sarif'
+          # Break the Pipeline? 1 = yes, 0 = no
+          exit-code: '1' 
+          # ignore unfixed vulnerabilities
+          ignore-unfixed: true
+          vuln-type: 'os,library'
+          # optional, default is UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL
+          severity: 'MEDIUM,HIGH,CRITICAL'
