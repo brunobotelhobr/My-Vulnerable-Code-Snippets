@@ -23,7 +23,7 @@ jobs:
           # Save file?
           # output: 'trivy-results.sarif'
           # Break the Pipeline? 1 = yes, 0 = no
-          exit-code: '1' 
+          exit-code: '0' 
           # ignore unfixed vulnerabilities
           ignore-unfixed: true
           vuln-type: 'os,library'
