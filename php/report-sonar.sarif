@@ -1,0 +1,165 @@
+{
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "guid" : "SonarQube",
+        "fullName" : "SonarQube",
+        "rules" : [ {
+          "guid" : "php:S121",
+          "shortDescription" : {
+            "text" : "Add curly braces around the nested statement(s)."
+          }
+        }, {
+          "guid" : "php:S2077",
+          "shortDescription" : {
+            "text" : "Make sure that formatting this SQL query is safe here."
+          }
+        }, {
+          "guid" : "php:S1781",
+          "shortDescription" : {
+            "text" : "Write this \"NULL\" constant in lower case."
+          }
+        }, {
+          "guid" : "php:S1192",
+          "shortDescription" : {
+            "text" : "Define a constant instead of duplicating this literal \"put your unique phrase here\" 8 times."
+          }
+        } ]
+      }
+    },
+    "results" : [ {
+      "ruleId" : "php:S2077",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure that formatting this SQL query is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example2/basic-collection.php"
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 0,
+            "endLine" : 23,
+            "endColumn" : 23
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S1781",
+      "level" : "note",
+      "message" : {
+        "text" : "Write this \"NULL\" constant in lower case."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example2/sql-injection.php"
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 4,
+            "endLine" : 23,
+            "endColumn" : 23
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S121",
+      "level" : "error",
+      "message" : {
+        "text" : "Add curly braces around the nested statement(s)."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example2/sql-injection.php"
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 0,
+            "endLine" : 23,
+            "endColumn" : 23
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S1781",
+      "level" : "note",
+      "message" : {
+        "text" : "Write this \"NULL\" constant in lower case."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example2/cross-site-scripting-xss.php"
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 4,
+            "endLine" : 21,
+            "endColumn" : 21
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S121",
+      "level" : "error",
+      "message" : {
+        "text" : "Add curly braces around the nested statement(s)."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example2/cross-site-scripting-xss.php"
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 0,
+            "endLine" : 21,
+            "endColumn" : 21
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S1192",
+      "level" : "error",
+      "message" : {
+        "text" : "Define a constant instead of duplicating this literal \"put your unique phrase here\" 8 times."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example1/wp-config.php"
+          },
+          "region" : {
+            "startLine" : 63,
+            "startColumn" : 28,
+            "endLine" : 63,
+            "endColumn" : 63
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S2077",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure that formatting this SQL query is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example2/sql-injection_2.php"
+          },
+          "region" : {
+            "startLine" : 25,
+            "startColumn" : 9,
+            "endLine" : 25,
+            "endColumn" : 25
+          }
+        }
+      } ]
+    } ]
+  } ]
+}
