@@ -1,0 +1,4131 @@
+{
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "guid" : "SonarQube",
+        "fullName" : "SonarQube",
+        "rules" : [ {
+          "guid" : "terraform:S6388",
+          "shortDescription" : {
+            "text" : "Omitting \"disk_encryption_set_id\" enables clear-text storage. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "docker:S6471",
+          "shortDescription" : {
+            "text" : "This image might run with \"root\" as the default user. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "docker:S6471",
+          "shortDescription" : {
+            "text" : "The \"ruby\" image runs with \"root\" as the default user. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "docker:S6587",
+          "shortDescription" : {
+            "text" : "Remove cache after installing packages or store it in a cache mount."
+          }
+        }, {
+          "guid" : "docker:S6471",
+          "shortDescription" : {
+            "text" : "The \"mongo\" image runs with \"root\" as the default user. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "kubernetes:S6897",
+          "shortDescription" : {
+            "text" : "Specify a storage request for this container."
+          }
+        }, {
+          "guid" : "docker:S6476",
+          "shortDescription" : {
+            "text" : "Replace \"as\" with upper case format \"AS\"."
+          }
+        }, {
+          "guid" : "docker:S6471",
+          "shortDescription" : {
+            "text" : "The \"node\" image runs with \"root\" as the default user. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "kotlin:S1172",
+          "shortDescription" : {
+            "text" : "Remove these unused function parameters."
+          }
+        }, {
+          "guid" : "docker:S6471",
+          "shortDescription" : {
+            "text" : "The \"python\" image runs with \"root\" as the default user. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "kotlin:S1128",
+          "shortDescription" : {
+            "text" : "Remove this unused import."
+          }
+        }, {
+          "guid" : "kotlin:S1172",
+          "shortDescription" : {
+            "text" : "Remove this unused function parameter \"username\"."
+          }
+        }, {
+          "guid" : "cloudformation:S6249",
+          "shortDescription" : {
+            "text" : "No bucket policy enforces HTTPS-only access to this bucket. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "Web:PageWithoutTitleCheck",
+          "shortDescription" : {
+            "text" : "Add a <title> tag to this page."
+          }
+        }, {
+          "guid" : "javascript:S2245",
+          "shortDescription" : {
+            "text" : "Make sure that using this pseudorandom number generator is safe here."
+          }
+        }, {
+          "guid" : "docker:S7026",
+          "shortDescription" : {
+            "text" : "Replace this invocation of \"wget\" with the ADD instruction."
+          }
+        }, {
+          "guid" : "php:S1192",
+          "shortDescription" : {
+            "text" : "Define a constant instead of duplicating this literal \"put your unique phrase here\" 8 times."
+          }
+        }, {
+          "guid" : "docker:S6473",
+          "shortDescription" : {
+            "text" : "Make sure that exposing administration services is safe here."
+          }
+        }, {
+          "guid" : "javascript:S125",
+          "shortDescription" : {
+            "text" : "Remove this commented out code."
+          }
+        }, {
+          "guid" : "javascript:S5689",
+          "shortDescription" : {
+            "text" : "This framework implicitly discloses version information by default. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "kubernetes:S6873",
+          "shortDescription" : {
+            "text" : "Specify a memory request for this container."
+          }
+        }, {
+          "guid" : "kubernetes:S6596",
+          "shortDescription" : {
+            "text" : "Use a specific version tag for the image."
+          }
+        }, {
+          "guid" : "xml:S1778",
+          "shortDescription" : {
+            "text" : "Remove all characters located before \"<?xml\"."
+          }
+        }, {
+          "guid" : "php:S1781",
+          "shortDescription" : {
+            "text" : "Write this \"NULL\" constant in lower case."
+          }
+        }, {
+          "guid" : "javascript:S6535",
+          "shortDescription" : {
+            "text" : "Unnecessary escape character: \\-."
+          }
+        }, {
+          "guid" : "javascript:S6535",
+          "shortDescription" : {
+            "text" : "Unnecessary escape character: \\.."
+          }
+        }, {
+          "guid" : "docker:S6471",
+          "shortDescription" : {
+            "text" : "The \"alpine\" image runs with \"root\" as the default user. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "kotlin:S2068",
+          "shortDescription" : {
+            "text" : "\"password\" detected here, make sure this is not a hard-coded credential."
+          }
+        }, {
+          "guid" : "docker:S7029",
+          "shortDescription" : {
+            "text" : "Replace this ADD instruction with a COPY instruction."
+          }
+        }, {
+          "guid" : "javascript:S2068",
+          "shortDescription" : {
+            "text" : "Review this potentially hard-coded password."
+          }
+        }, {
+          "guid" : "cloudformation:S6252",
+          "shortDescription" : {
+            "text" : "Omitting \"VersioningConfiguration\" disables S3 bucket versioning. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "kubernetes:S6865",
+          "shortDescription" : {
+            "text" : "Bind this resource's automounted service account to RBAC or disable automounting."
+          }
+        }, {
+          "guid" : "php:S2077",
+          "shortDescription" : {
+            "text" : "Make sure that formatting this SQL query is safe here."
+          }
+        }, {
+          "guid" : "javascript:S6535",
+          "shortDescription" : {
+            "text" : "Unnecessary escape character: \\@."
+          }
+        }, {
+          "guid" : "docker:S6470",
+          "shortDescription" : {
+            "text" : "Adding files recursively might inadvertently add sensitive data to the container. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "php:S121",
+          "shortDescription" : {
+            "text" : "Add curly braces around the nested statement(s)."
+          }
+        }, {
+          "guid" : "kubernetes:S6892",
+          "shortDescription" : {
+            "text" : "Specify a CPU request for this container."
+          }
+        }, {
+          "guid" : "javascript:S2092",
+          "shortDescription" : {
+            "text" : "Make sure creating this cookie without the \"secure\" flag is safe."
+          }
+        }, {
+          "guid" : "docker:S6471",
+          "shortDescription" : {
+            "text" : "The \"golang\" image runs with \"root\" as the default user. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "terraform:S4423",
+          "shortDescription" : {
+            "text" : "Set \"security_policy\" to disable support of older TLS versions."
+          }
+        }, {
+          "guid" : "docker:S5332",
+          "shortDescription" : {
+            "text" : "Make sure that using clear-text protocols is safe here."
+          }
+        }, {
+          "guid" : "secrets:S6698",
+          "shortDescription" : {
+            "text" : "Make sure this PostgreSQL database password gets changed and removed from the code."
+          }
+        }, {
+          "guid" : "kubernetes:S6864",
+          "shortDescription" : {
+            "text" : "Specify a memory limit for this container."
+          }
+        }, {
+          "guid" : "docker:S6471",
+          "shortDescription" : {
+            "text" : "The \"openjdk\" image runs with \"root\" as the default user. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "terraform:S4423",
+          "shortDescription" : {
+            "text" : "Change this code to disable support of older TLS versions."
+          }
+        }, {
+          "guid" : "docker:S6570",
+          "shortDescription" : {
+            "text" : "Surround this variable with double quotes; otherwise, it can lead to unexpected behavior."
+          }
+        }, {
+          "guid" : "javascript:S4138",
+          "shortDescription" : {
+            "text" : "Expected a `for-of` loop instead of a `for` loop with this simple iteration."
+          }
+        }, {
+          "guid" : "terraform:S6329",
+          "shortDescription" : {
+            "text" : "Omitting \"public_network_access_enabled\" allows network access from the Internet. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "kotlin:S1172",
+          "shortDescription" : {
+            "text" : "Remove this unused function parameter \"args\"."
+          }
+        }, {
+          "guid" : "javascript:S3504",
+          "shortDescription" : {
+            "text" : "Unexpected var, use let or const instead."
+          }
+        }, {
+          "guid" : "docker:S6596",
+          "shortDescription" : {
+            "text" : "Use a specific version tag for the image."
+          }
+        }, {
+          "guid" : "go:S1192",
+          "shortDescription" : {
+            "text" : "Define a constant instead of duplicating this literal \"Should return an empty string.\" 3 times."
+          }
+        }, {
+          "guid" : "docker:S7018",
+          "shortDescription" : {
+            "text" : "Sort these package names alphanumerically."
+          }
+        }, {
+          "guid" : "cloudformation:S6281",
+          "shortDescription" : {
+            "text" : "Make sure allowing public ACL/policies to be set is safe here."
+          }
+        }, {
+          "guid" : "cloudformation:S6258",
+          "shortDescription" : {
+            "text" : "Omitting \"LoggingConfiguration\" makes logs incomplete. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "php:S6393",
+          "shortDescription" : {
+            "text" : "Add delimiters to this regular expression."
+          }
+        }, {
+          "guid" : "docker:S7031",
+          "shortDescription" : {
+            "text" : "Merge this RUN instruction with the consecutive ones."
+          }
+        }, {
+          "guid" : "docker:S6506",
+          "shortDescription" : {
+            "text" : "Not enforcing HTTPS here might allow for redirections to insecure websites. Make sure it is safe here."
+          }
+        }, {
+          "guid" : "kubernetes:S6429",
+          "shortDescription" : {
+            "text" : "Make sure exposing the Docker socket is safe here."
+          }
+        }, {
+          "guid" : "Web:S5254",
+          "shortDescription" : {
+            "text" : "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element"
+          }
+        } ]
+      }
+    },
+    "results" : [ {
+      "ruleId" : "go:S1192",
+      "level" : "error",
+      "message" : {
+        "text" : "Define a constant instead of duplicating this literal \"Should return an empty string.\" 3 times."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/golang/api/util/util_test.go"
+          },
+          "region" : {
+            "startLine" : 25,
+            "startColumn" : 6,
+            "endLine" : 25,
+            "endColumn" : 25
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kotlin:S1128",
+      "level" : "note",
+      "message" : {
+        "text" : "Remove this unused import."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/kotlin/example1/src/test/kotlin/HelloTest.kt"
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 7,
+            "endLine" : 19,
+            "endColumn" : 19
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kotlin:S1128",
+      "level" : "note",
+      "message" : {
+        "text" : "Remove this unused import."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/kotlin/example1/src/test/kotlin/HelloTest.kt"
+          },
+          "region" : {
+            "startLine" : 20,
+            "startColumn" : 7,
+            "endLine" : 20,
+            "endColumn" : 20
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kotlin:S1172",
+      "level" : "warning",
+      "message" : {
+        "text" : "Remove these unused function parameters."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/kotlin/example1/src/main/kotlin/Hello.kt"
+          },
+          "region" : {
+            "startLine" : 155,
+            "startColumn" : 15,
+            "endLine" : 155,
+            "endColumn" : 155
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kotlin:S1172",
+      "level" : "warning",
+      "message" : {
+        "text" : "Remove this unused function parameter \"username\"."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/kotlin/example1/src/main/kotlin/Hello.kt"
+          },
+          "region" : {
+            "startLine" : 159,
+            "startColumn" : 16,
+            "endLine" : 159,
+            "endColumn" : 159
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kotlin:S1172",
+      "level" : "warning",
+      "message" : {
+        "text" : "Remove this unused function parameter \"args\"."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/kotlin/example1/src/main/kotlin/Hello.kt"
+          },
+          "region" : {
+            "startLine" : 163,
+            "startColumn" : 9,
+            "endLine" : 163,
+            "endColumn" : 163
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kotlin:S2068",
+      "level" : "warning",
+      "message" : {
+        "text" : "\"password\" detected here, make sure this is not a hard-coded credential."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/kotlin/example1/src/main/kotlin/Hello.kt"
+          },
+          "region" : {
+            "startLine" : 164,
+            "startColumn" : 8,
+            "endLine" : 164,
+            "endColumn" : 164
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "terraform:S6329",
+      "level" : "warning",
+      "message" : {
+        "text" : "Omitting \"public_network_access_enabled\" allows network access from the Internet. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/main.tf"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 9,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "terraform:S6388",
+      "level" : "warning",
+      "message" : {
+        "text" : "Omitting \"disk_encryption_set_id\" enables clear-text storage. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/main.tf"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 9,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "terraform:S4423",
+      "level" : "error",
+      "message" : {
+        "text" : "Set \"security_policy\" to disable support of older TLS versions."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/main.tf"
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 9,
+            "endLine" : 22,
+            "endColumn" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "terraform:S4423",
+      "level" : "error",
+      "message" : {
+        "text" : "Change this code to disable support of older TLS versions."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/main.tf"
+          },
+          "region" : {
+            "startLine" : 26,
+            "startColumn" : 4,
+            "endLine" : 26,
+            "endColumn" : 26
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "terraform:S4423",
+      "level" : "error",
+      "message" : {
+        "text" : "Change this code to disable support of older TLS versions."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/main.tf"
+          },
+          "region" : {
+            "startLine" : 30,
+            "startColumn" : 4,
+            "endLine" : 30,
+            "endColumn" : 30
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "terraform:S6329",
+      "level" : "warning",
+      "message" : {
+        "text" : "Omitting \"public_network_access_enabled\" allows network access from the Internet. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/hcl/example1/main.tf"
+          },
+          "region" : {
+            "startLine" : 32,
+            "startColumn" : 9,
+            "endLine" : 32,
+            "endColumn" : 32
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "terraform:S6388",
+      "level" : "warning",
+      "message" : {
+        "text" : "Omitting \"disk_encryption_set_id\" enables clear-text storage. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/hcl/example1/main.tf"
+          },
+          "region" : {
+            "startLine" : 32,
+            "startColumn" : 9,
+            "endLine" : 32,
+            "endColumn" : 32
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "cloudformation:S6252",
+      "level" : "note",
+      "message" : {
+        "text" : "Omitting \"VersioningConfiguration\" disables S3 bucket versioning. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/bucket.yaml"
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 10,
+            "endLine" : 13,
+            "endColumn" : 13
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "cloudformation:S6258",
+      "level" : "warning",
+      "message" : {
+        "text" : "Omitting \"LoggingConfiguration\" makes logs incomplete. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/bucket.yaml"
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 10,
+            "endLine" : 13,
+            "endColumn" : 13
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "cloudformation:S6281",
+      "level" : "error",
+      "message" : {
+        "text" : "Make sure allowing public ACL/policies to be set is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/bucket.yaml"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 6,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "cloudformation:S6249",
+      "level" : "error",
+      "message" : {
+        "text" : "No bucket policy enforces HTTPS-only access to this bucket. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/bucket.yaml"
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 10,
+            "endLine" : 13,
+            "endColumn" : 13
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6429",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure exposing the Docker socket is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/rule-exception/configs/deployment-allow.yaml"
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 16,
+            "endLine" : 28,
+            "endColumn" : 28
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6864",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a memory limit for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/rule-exception/configs/deployment-allow.yaml"
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 8,
+            "endLine" : 18,
+            "endColumn" : 18
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6897",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a storage request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/rule-exception/configs/deployment-allow.yaml"
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 8,
+            "endLine" : 18,
+            "endColumn" : 18
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6865",
+      "level" : "warning",
+      "message" : {
+        "text" : "Bind this resource's automounted service account to RBAC or disable automounting."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/rule-exception/configs/deployment-allow.yaml"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 6,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6892",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a CPU request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/rule-exception/configs/deployment-allow.yaml"
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 8,
+            "endLine" : 18,
+            "endColumn" : 18
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6873",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a memory request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/rule-exception/configs/deployment-allow.yaml"
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 8,
+            "endLine" : 18,
+            "endColumn" : 18
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6429",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure exposing the Docker socket is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/rule-exception/configs/deployment-deny.yaml"
+          },
+          "region" : {
+            "startLine" : 26,
+            "startColumn" : 16,
+            "endLine" : 26,
+            "endColumn" : 26
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6864",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a memory limit for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/rule-exception/configs/deployment-deny.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6897",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a storage request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/rule-exception/configs/deployment-deny.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6865",
+      "level" : "warning",
+      "message" : {
+        "text" : "Bind this resource's automounted service account to RBAC or disable automounting."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/rule-exception/configs/deployment-deny.yaml"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 6,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6892",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a CPU request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/rule-exception/configs/deployment-deny.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6873",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a memory request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/rule-exception/configs/deployment-deny.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6864",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a memory limit for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/combine/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 10,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6897",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a storage request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/combine/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 10,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6865",
+      "level" : "warning",
+      "message" : {
+        "text" : "Bind this resource's automounted service account to RBAC or disable automounting."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/combine/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 6,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6892",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a CPU request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/combine/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 10,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6596",
+      "level" : "warning",
+      "message" : {
+        "text" : "Use a specific version tag for the image."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/combine/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 17,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6873",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a memory request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/combine/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 10,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6429",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure exposing the Docker socket is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 26,
+            "startColumn" : 16,
+            "endLine" : 26,
+            "endColumn" : 26
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6864",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a memory limit for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6897",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a storage request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6865",
+      "level" : "warning",
+      "message" : {
+        "text" : "Bind this resource's automounted service account to RBAC or disable automounting."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 6,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6892",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a CPU request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6873",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a memory request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6429",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure exposing the Docker socket is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/custom-policy/kubernetes/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 26,
+            "startColumn" : 16,
+            "endLine" : 26,
+            "endColumn" : 26
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6864",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a memory limit for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/custom-policy/kubernetes/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6897",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a storage request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/custom-policy/kubernetes/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6865",
+      "level" : "warning",
+      "message" : {
+        "text" : "Bind this resource's automounted service account to RBAC or disable automounting."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/custom-policy/kubernetes/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 6,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6892",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a CPU request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/custom-policy/kubernetes/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6873",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a memory request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/custom-policy/kubernetes/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6429",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure exposing the Docker socket is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/namespace-exception/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 26,
+            "startColumn" : 16,
+            "endLine" : 26,
+            "endColumn" : 26
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6864",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a memory limit for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/namespace-exception/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6897",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a storage request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/namespace-exception/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6865",
+      "level" : "warning",
+      "message" : {
+        "text" : "Bind this resource's automounted service account to RBAC or disable automounting."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/namespace-exception/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 6,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6892",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a CPU request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/namespace-exception/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "kubernetes:S6873",
+      "level" : "warning",
+      "message" : {
+        "text" : "Specify a memory request for this container."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/namespace-exception/configs/deployment.yaml"
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 8,
+            "endLine" : 16,
+            "endColumn" : 16
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 0,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 0,
+            "endLine" : 18,
+            "endColumn" : 18
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 0,
+            "endLine" : 19,
+            "endColumn" : 19
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 20,
+            "startColumn" : 0,
+            "endLine" : 20,
+            "endColumn" : 20
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 0,
+            "endLine" : 21,
+            "endColumn" : 21
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 0,
+            "endLine" : 22,
+            "endColumn" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 0,
+            "endLine" : 23,
+            "endColumn" : 23
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 0,
+            "endLine" : 24,
+            "endColumn" : 24
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 25,
+            "startColumn" : 0,
+            "endLine" : 25,
+            "endColumn" : 25
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 26,
+            "startColumn" : 0,
+            "endLine" : 26,
+            "endColumn" : 26
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 0,
+            "endLine" : 28,
+            "endColumn" : 28
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 29,
+            "startColumn" : 0,
+            "endLine" : 29,
+            "endColumn" : 29
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 30,
+            "startColumn" : 0,
+            "endLine" : 30,
+            "endColumn" : 30
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 32,
+            "startColumn" : 0,
+            "endLine" : 32,
+            "endColumn" : 32
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S5689",
+      "level" : "note",
+      "message" : {
+        "text" : "This framework implicitly discloses version information by default. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 32,
+            "startColumn" : 4,
+            "endLine" : 32,
+            "endColumn" : 32
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S125",
+      "level" : "warning",
+      "message" : {
+        "text" : "Remove this commented out code."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 36,
+            "startColumn" : 0,
+            "endLine" : 36,
+            "endColumn" : 36
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 39,
+            "startColumn" : 0,
+            "endLine" : 39,
+            "endColumn" : 39
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 42,
+            "startColumn" : 0,
+            "endLine" : 42,
+            "endColumn" : 42
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S2092",
+      "level" : "note",
+      "message" : {
+        "text" : "Make sure creating this cookie without the \"secure\" flag is safe."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 59,
+            "startColumn" : 8,
+            "endLine" : 59,
+            "endColumn" : 59
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/app.js"
+          },
+          "region" : {
+            "startLine" : 76,
+            "startColumn" : 2,
+            "endLine" : 76,
+            "endColumn" : 76
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S5689",
+      "level" : "note",
+      "message" : {
+        "text" : "This framework implicitly discloses version information by default. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example1/app.js"
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 6,
+            "endLine" : 19,
+            "endColumn" : 19
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/injection.js"
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 0,
+            "endLine" : 1,
+            "endColumn" : 1
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/auth.js"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 0,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/auth.js"
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 4,
+            "endLine" : 21,
+            "endColumn" : 21
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/auth.js"
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 4,
+            "endLine" : 23,
+            "endColumn" : 23
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/init_db.js"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 0,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/init_db.js"
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 0,
+            "endLine" : 18,
+            "endColumn" : 18
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/init_db.js"
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 0,
+            "endLine" : 19,
+            "endColumn" : 19
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/init_db.js"
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 4,
+            "endLine" : 28,
+            "endColumn" : 28
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/init_db.js"
+          },
+          "region" : {
+            "startLine" : 37,
+            "startColumn" : 12,
+            "endLine" : 37,
+            "endColumn" : 37
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S4138",
+      "level" : "note",
+      "message" : {
+        "text" : "Expected a `for-of` loop instead of a `for` loop with this simple iteration."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/init_db.js"
+          },
+          "region" : {
+            "startLine" : 38,
+            "startColumn" : 12,
+            "endLine" : 46,
+            "endColumn" : 46
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/init_db.js"
+          },
+          "region" : {
+            "startLine" : 38,
+            "startColumn" : 17,
+            "endLine" : 38,
+            "endColumn" : 38
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/init_db.js"
+          },
+          "region" : {
+            "startLine" : 39,
+            "startColumn" : 16,
+            "endLine" : 39,
+            "endColumn" : 39
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/init_db.js"
+          },
+          "region" : {
+            "startLine" : 58,
+            "startColumn" : 12,
+            "endLine" : 58,
+            "endColumn" : 58
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/init_db.js"
+          },
+          "region" : {
+            "startLine" : 59,
+            "startColumn" : 17,
+            "endLine" : 59,
+            "endColumn" : 59
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/init_db.js"
+          },
+          "region" : {
+            "startLine" : 60,
+            "startColumn" : 16,
+            "endLine" : 60,
+            "endColumn" : 60
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/products.js"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 0,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/products.js"
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 4,
+            "endLine" : 23,
+            "endColumn" : 23
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/products.js"
+          },
+          "region" : {
+            "startLine" : 30,
+            "startColumn" : 4,
+            "endLine" : 30,
+            "endColumn" : 30
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/products.js"
+          },
+          "region" : {
+            "startLine" : 37,
+            "startColumn" : 4,
+            "endLine" : 37,
+            "endColumn" : 37
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/products.js"
+          },
+          "region" : {
+            "startLine" : 45,
+            "startColumn" : 4,
+            "endLine" : 45,
+            "endColumn" : 45
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/products.js"
+          },
+          "region" : {
+            "startLine" : 62,
+            "startColumn" : 4,
+            "endLine" : 62,
+            "endColumn" : 62
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/products.js"
+          },
+          "region" : {
+            "startLine" : 68,
+            "startColumn" : 0,
+            "endLine" : 68,
+            "endColumn" : 68
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/dummy.js"
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 0,
+            "endLine" : 19,
+            "endColumn" : 19
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S2068",
+      "level" : "warning",
+      "message" : {
+        "text" : "Review this potentially hard-coded password."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/dummy.js"
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 18,
+            "endLine" : 24,
+            "endColumn" : 24
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S2068",
+      "level" : "warning",
+      "message" : {
+        "text" : "Review this potentially hard-coded password."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/dummy.js"
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 18,
+            "endLine" : 28,
+            "endColumn" : 28
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S2245",
+      "level" : "error",
+      "message" : {
+        "text" : "Make sure that using this pseudorandom number generator is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/dummy.js"
+          },
+          "region" : {
+            "startLine" : 36,
+            "startColumn" : 24,
+            "endLine" : 36,
+            "endColumn" : 36
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S2245",
+      "level" : "error",
+      "message" : {
+        "text" : "Make sure that using this pseudorandom number generator is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/dummy.js"
+          },
+          "region" : {
+            "startLine" : 42,
+            "startColumn" : 24,
+            "endLine" : 42,
+            "endColumn" : 42
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S2245",
+      "level" : "error",
+      "message" : {
+        "text" : "Make sure that using this pseudorandom number generator is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/dummy.js"
+          },
+          "region" : {
+            "startLine" : 48,
+            "startColumn" : 24,
+            "endLine" : 48,
+            "endColumn" : 48
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S2245",
+      "level" : "error",
+      "message" : {
+        "text" : "Make sure that using this pseudorandom number generator is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/dummy.js"
+          },
+          "region" : {
+            "startLine" : 66,
+            "startColumn" : 24,
+            "endLine" : 66,
+            "endColumn" : 66
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S2245",
+      "level" : "error",
+      "message" : {
+        "text" : "Make sure that using this pseudorandom number generator is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/dummy.js"
+          },
+          "region" : {
+            "startLine" : 72,
+            "startColumn" : 24,
+            "endLine" : 72,
+            "endColumn" : 72
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S2245",
+      "level" : "error",
+      "message" : {
+        "text" : "Make sure that using this pseudorandom number generator is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/dummy.js"
+          },
+          "region" : {
+            "startLine" : 78,
+            "startColumn" : 24,
+            "endLine" : 78,
+            "endColumn" : 78
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/auth.js"
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 0,
+            "endLine" : 2,
+            "endColumn" : 2
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/auth.js"
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 0,
+            "endLine" : 6,
+            "endColumn" : 6
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/auth.js"
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 0,
+            "endLine" : 8,
+            "endColumn" : 8
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/product.js"
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 0,
+            "endLine" : 1,
+            "endColumn" : 1
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/product.js"
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 4,
+            "endLine" : 7,
+            "endColumn" : 7
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/product.js"
+          },
+          "region" : {
+            "startLine" : 14,
+            "startColumn" : 4,
+            "endLine" : 14,
+            "endColumn" : 14
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/product.js"
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 4,
+            "endLine" : 21,
+            "endColumn" : 21
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/product.js"
+          },
+          "region" : {
+            "startLine" : 29,
+            "startColumn" : 4,
+            "endLine" : 29,
+            "endColumn" : 29
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/product.js"
+          },
+          "region" : {
+            "startLine" : 46,
+            "startColumn" : 4,
+            "endLine" : 46,
+            "endColumn" : 46
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/product.js"
+          },
+          "region" : {
+            "startLine" : 53,
+            "startColumn" : 4,
+            "endLine" : 53,
+            "endColumn" : 53
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S6535",
+      "level" : "warning",
+      "message" : {
+        "text" : "Unnecessary escape character: \\.."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/product.js"
+          },
+          "region" : {
+            "startLine" : 53,
+            "startColumn" : 40,
+            "endLine" : 53,
+            "endColumn" : 53
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S6535",
+      "level" : "warning",
+      "message" : {
+        "text" : "Unnecessary escape character: \\-."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/product.js"
+          },
+          "region" : {
+            "startLine" : 53,
+            "startColumn" : 42,
+            "endLine" : 53,
+            "endColumn" : 53
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S6535",
+      "level" : "warning",
+      "message" : {
+        "text" : "Unnecessary escape character: \\@."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/product.js"
+          },
+          "region" : {
+            "startLine" : 53,
+            "startColumn" : 47,
+            "endLine" : 53,
+            "endColumn" : 53
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S6535",
+      "level" : "warning",
+      "message" : {
+        "text" : "Unnecessary escape character: \\-."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/product.js"
+          },
+          "region" : {
+            "startLine" : 53,
+            "startColumn" : 61,
+            "endLine" : 53,
+            "endColumn" : 53
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/node/product.js"
+          },
+          "region" : {
+            "startLine" : 58,
+            "startColumn" : 0,
+            "endLine" : 58,
+            "endColumn" : 58
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S5689",
+      "level" : "note",
+      "message" : {
+        "text" : "This framework implicitly discloses version information by default. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example2/app.js"
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 6,
+            "endLine" : 19,
+            "endColumn" : 19
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/config.js"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 0,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/config.js"
+          },
+          "region" : {
+            "startLine" : 25,
+            "startColumn" : 0,
+            "endLine" : 25,
+            "endColumn" : 25
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/config.js"
+          },
+          "region" : {
+            "startLine" : 33,
+            "startColumn" : 0,
+            "endLine" : 33,
+            "endColumn" : 33
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "javascript:S3504",
+      "level" : "error",
+      "message" : {
+        "text" : "Unexpected var, use let or const instead."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/config.js"
+          },
+          "region" : {
+            "startLine" : 42,
+            "startColumn" : 0,
+            "endLine" : 42,
+            "endColumn" : 42
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "Web:S5254",
+      "level" : "warning",
+      "message" : {
+        "text" : "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/ruby/example1/public/422.html"
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 0,
+            "endLine" : 18,
+            "endColumn" : 18
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "Web:S5254",
+      "level" : "warning",
+      "message" : {
+        "text" : "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/ruby/example1/app/views/layouts/mailer.html.erb"
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 0,
+            "endLine" : 2,
+            "endColumn" : 2
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "Web:PageWithoutTitleCheck",
+      "level" : "warning",
+      "message" : {
+        "text" : "Add a <title> tag to this page."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/ruby/example1/app/views/layouts/mailer.html.erb"
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 0,
+            "endLine" : 3,
+            "endColumn" : 3
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "Web:S5254",
+      "level" : "warning",
+      "message" : {
+        "text" : "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/ruby/example1/public/500.html"
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 0,
+            "endLine" : 18,
+            "endColumn" : 18
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "Web:S5254",
+      "level" : "warning",
+      "message" : {
+        "text" : "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/ruby/example1/public/404.html"
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 0,
+            "endLine" : 18,
+            "endColumn" : 18
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "Web:S5254",
+      "level" : "warning",
+      "message" : {
+        "text" : "Add \"lang\" and/or \"xml:lang\" attributes to this \"<html>\" element"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/ruby/example1/app/views/layouts/application.html.erb"
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 0,
+            "endLine" : 2,
+            "endColumn" : 2
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "xml:S1778",
+      "level" : "error",
+      "message" : {
+        "text" : "Remove all characters located before \"<?xml\"."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/java/example2/src/main/resources/log4j2.xml"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 0,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "xml:S1778",
+      "level" : "error",
+      "message" : {
+        "text" : "Remove all characters located before \"<?xml\"."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/kotlin/example1/pom.xml"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 0,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S1781",
+      "level" : "note",
+      "message" : {
+        "text" : "Write this \"NULL\" constant in lower case."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example2/sql-injection.php"
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 4,
+            "endLine" : 23,
+            "endColumn" : 23
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S121",
+      "level" : "error",
+      "message" : {
+        "text" : "Add curly braces around the nested statement(s)."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example2/sql-injection.php"
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 0,
+            "endLine" : 23,
+            "endColumn" : 23
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S2077",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure that formatting this SQL query is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example2/tool-examples/php-security-scanner.php"
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 4,
+            "endLine" : 22,
+            "endColumn" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S6393",
+      "level" : "error",
+      "message" : {
+        "text" : "Add delimiters to this regular expression."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example2/tool-examples/phpcs-security-audit.php"
+          },
+          "region" : {
+            "startLine" : 27,
+            "startColumn" : 13,
+            "endLine" : 27,
+            "endColumn" : 27
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S1192",
+      "level" : "error",
+      "message" : {
+        "text" : "Define a constant instead of duplicating this literal \"put your unique phrase here\" 8 times."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example1/wp-config.php"
+          },
+          "region" : {
+            "startLine" : 63,
+            "startColumn" : 28,
+            "endLine" : 63,
+            "endColumn" : 63
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S2077",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure that formatting this SQL query is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example2/sql-injection_2.php"
+          },
+          "region" : {
+            "startLine" : 25,
+            "startColumn" : 9,
+            "endLine" : 25,
+            "endColumn" : 25
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S1781",
+      "level" : "note",
+      "message" : {
+        "text" : "Write this \"NULL\" constant in lower case."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example2/cross-site-scripting-xss.php"
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 4,
+            "endLine" : 21,
+            "endColumn" : 21
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S121",
+      "level" : "error",
+      "message" : {
+        "text" : "Add curly braces around the nested statement(s)."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example2/cross-site-scripting-xss.php"
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 0,
+            "endLine" : 21,
+            "endColumn" : 21
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "php:S2077",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure that formatting this SQL query is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/php/example2/basic-collection.php"
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 0,
+            "endLine" : 23,
+            "endColumn" : 23
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6596",
+      "level" : "warning",
+      "message" : {
+        "text" : "Use a specific version tag for the image."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/gosec/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 5,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "This image might run with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/gosec/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 0,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7018",
+      "level" : "note",
+      "message" : {
+        "text" : "Sort these package names alphanumerically."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/gosec/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 4,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6587",
+      "level" : "warning",
+      "message" : {
+        "text" : "Remove cache after installing packages or store it in a cache mount."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/spotbugs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 4,
+            "endLine" : 19,
+            "endColumn" : 19
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"openjdk\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/spotbugs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 0,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7018",
+      "level" : "note",
+      "message" : {
+        "text" : "Sort these package names alphanumerically."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/spotbugs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 4,
+            "endLine" : 18,
+            "endColumn" : 18
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6506",
+      "level" : "warning",
+      "message" : {
+        "text" : "Not enforcing HTTPS here might allow for redirections to insecure websites. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/spotbugs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 5,
+            "endLine" : 28,
+            "endColumn" : 28
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S5332",
+      "level" : "error",
+      "message" : {
+        "text" : "Make sure that using clear-text protocols is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/spotbugs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 38,
+            "startColumn" : 30,
+            "endLine" : 38,
+            "endColumn" : 38
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6570",
+      "level" : "warning",
+      "message" : {
+        "text" : "Surround this variable with double quotes; otherwise, it can lead to unexpected behavior."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/spotbugs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 43,
+            "startColumn" : 13,
+            "endLine" : 43,
+            "endColumn" : 43
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"mongo\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/db.Dockerfile"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 0,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7029",
+      "level" : "warning",
+      "message" : {
+        "text" : "Replace this ADD instruction with a COPY instruction."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/db.Dockerfile"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 0,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6587",
+      "level" : "warning",
+      "message" : {
+        "text" : "Remove cache after installing packages or store it in a cache mount."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 4,
+            "endLine" : 3,
+            "endColumn" : 3
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"alpine\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 0,
+            "endLine" : 1,
+            "endColumn" : 1
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7029",
+      "level" : "warning",
+      "message" : {
+        "text" : "Replace this ADD instruction with a COPY instruction."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/mixed/configs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 0,
+            "endLine" : 4,
+            "endColumn" : 4
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6587",
+      "level" : "warning",
+      "message" : {
+        "text" : "Remove cache after installing packages or store it in a cache mount."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/go-testing/configs/Dockerfile.allowed"
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 4,
+            "endLine" : 3,
+            "endColumn" : 3
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"alpine\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/go-testing/configs/Dockerfile.allowed"
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 0,
+            "endLine" : 1,
+            "endColumn" : 1
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"alpine\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/custom-policy/dockerfile/configs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 0,
+            "endLine" : 1,
+            "endColumn" : 1
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S5332",
+      "level" : "error",
+      "message" : {
+        "text" : "Make sure that using clear-text protocols is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/custom-policy/dockerfile/configs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 4,
+            "endLine" : 3,
+            "endColumn" : 3
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6596",
+      "level" : "warning",
+      "message" : {
+        "text" : "Use a specific version tag for the image."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/api.Dockerfile"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 5,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"golang\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/api.Dockerfile"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 0,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6470",
+      "level" : "error",
+      "message" : {
+        "text" : "Adding files recursively might inadvertently add sensitive data to the container. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/api.Dockerfile"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 4,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7029",
+      "level" : "warning",
+      "message" : {
+        "text" : "Replace this ADD instruction with a COPY instruction."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/api.Dockerfile"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 0,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6476",
+      "level" : "warning",
+      "message" : {
+        "text" : "Replace \"as\" with upper case format \"AS\"."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/bandit/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 23,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"python\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/bandit/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 0,
+            "endLine" : 22,
+            "endColumn" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7018",
+      "level" : "note",
+      "message" : {
+        "text" : "Sort these package names alphanumerically."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/bandit/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 4,
+            "endLine" : 28,
+            "endColumn" : 28
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"alpine\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/gitauthors/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 0,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7031",
+      "level" : "note",
+      "message" : {
+        "text" : "Merge this RUN instruction with the consecutive ones."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/brakeman/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 0,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6587",
+      "level" : "warning",
+      "message" : {
+        "text" : "Remove cache after installing packages or store it in a cache mount."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/brakeman/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 4,
+            "endLine" : 19,
+            "endColumn" : 19
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"ruby\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/brakeman/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 0,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7026",
+      "level" : "note",
+      "message" : {
+        "text" : "Replace this invocation of \"wget\" with the ADD instruction."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/brakeman/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 4,
+            "endLine" : 23,
+            "endColumn" : 23
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6587",
+      "level" : "warning",
+      "message" : {
+        "text" : "Remove cache after installing packages or store it in a cache mount."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/custom-data/configs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 4,
+            "endLine" : 3,
+            "endColumn" : 3
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"alpine\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/custom-data/configs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 0,
+            "endLine" : 1,
+            "endColumn" : 1
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6473",
+      "level" : "error",
+      "message" : {
+        "text" : "Make sure that exposing administration services is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/custom-data/configs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 7,
+            "endLine" : 5,
+            "endColumn" : 5
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6476",
+      "level" : "warning",
+      "message" : {
+        "text" : "Replace \"as\" with upper case format \"AS\"."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/enry/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 19,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7018",
+      "level" : "note",
+      "message" : {
+        "text" : "Sort these package names alphanumerically."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/enry/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 4,
+            "endLine" : 18,
+            "endColumn" : 18
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"alpine\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/enry/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 0,
+            "endLine" : 23,
+            "endColumn" : 23
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7031",
+      "level" : "note",
+      "message" : {
+        "text" : "Merge this RUN instruction with the consecutive ones."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/npmaudit/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 20,
+            "startColumn" : 0,
+            "endLine" : 20,
+            "endColumn" : 20
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6587",
+      "level" : "warning",
+      "message" : {
+        "text" : "Remove cache after installing packages or store it in a cache mount."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/npmaudit/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 4,
+            "endLine" : 22,
+            "endColumn" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"node\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/npmaudit/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 0,
+            "endLine" : 18,
+            "endColumn" : 18
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7026",
+      "level" : "note",
+      "message" : {
+        "text" : "Replace this invocation of \"wget\" with the ADD instruction."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/npmaudit/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 4,
+            "endLine" : 24,
+            "endColumn" : 24
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6596",
+      "level" : "warning",
+      "message" : {
+        "text" : "Use a specific version tag for the image."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/gitleaks/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 5,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "This image might run with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/gitleaks/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 0,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7018",
+      "level" : "note",
+      "message" : {
+        "text" : "Sort these package names alphanumerically."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/gitleaks/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 4,
+            "endLine" : 17,
+            "endColumn" : 17
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6476",
+      "level" : "warning",
+      "message" : {
+        "text" : "Replace \"as\" with upper case format \"AS\"."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/safety/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 23,
+            "endLine" : 15,
+            "endColumn" : 15
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7018",
+      "level" : "note",
+      "message" : {
+        "text" : "Sort these package names alphanumerically."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/safety/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 4,
+            "endLine" : 18,
+            "endColumn" : 18
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"python\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/safety/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 0,
+            "endLine" : 22,
+            "endColumn" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7018",
+      "level" : "note",
+      "message" : {
+        "text" : "Sort these package names alphanumerically."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example1/deployments/dockerfiles/safety/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 4,
+            "endLine" : 28,
+            "endColumn" : 28
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6587",
+      "level" : "warning",
+      "message" : {
+        "text" : "Remove cache after installing packages or store it in a cache mount."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/go-testing/configs/Dockerfile.denied"
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 4,
+            "endLine" : 3,
+            "endColumn" : 3
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"alpine\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/go-testing/configs/Dockerfile.denied"
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 0,
+            "endLine" : 1,
+            "endColumn" : 1
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6473",
+      "level" : "error",
+      "message" : {
+        "text" : "Make sure that exposing administration services is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/go-testing/configs/Dockerfile.denied"
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 7,
+            "endLine" : 5,
+            "endColumn" : 5
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6587",
+      "level" : "warning",
+      "message" : {
+        "text" : "Remove cache after installing packages or store it in a cache mount."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/namespace-exception/configs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 4,
+            "endLine" : 3,
+            "endColumn" : 3
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S6471",
+      "level" : "note",
+      "message" : {
+        "text" : "The \"alpine\" image runs with \"root\" as the default user. Make sure it is safe here."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/namespace-exception/configs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 0,
+            "endLine" : 1,
+            "endColumn" : 1
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "docker:S7029",
+      "level" : "warning",
+      "message" : {
+        "text" : "Replace this ADD instruction with a COPY instruction."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/misconf/namespace-exception/configs/Dockerfile"
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 0,
+            "endLine" : 4,
+            "endColumn" : 4
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "secrets:S6698",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure this PostgreSQL database password gets changed and removed from the code."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/config.js"
+          },
+          "region" : {
+            "startLine" : 20,
+            "startColumn" : 39,
+            "endLine" : 20,
+            "endColumn" : 20
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "secrets:S6698",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure this PostgreSQL database password gets changed and removed from the code."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/config.js"
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 39,
+            "endLine" : 28,
+            "endColumn" : 28
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "secrets:S6698",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure this PostgreSQL database password gets changed and removed from the code."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/javascript/example3/config.js"
+          },
+          "region" : {
+            "startLine" : 36,
+            "startColumn" : 39,
+            "endLine" : 36,
+            "endColumn" : 36
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "secrets:S6698",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure this PostgreSQL database password gets changed and removed from the code."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/go/example2/main.go"
+          },
+          "region" : {
+            "startLine" : 32,
+            "startColumn" : 38,
+            "endLine" : 32,
+            "endColumn" : 32
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "secrets:S6698",
+      "level" : "warning",
+      "message" : {
+        "text" : "Make sure this PostgreSQL database password gets changed and removed from the code."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/botelho/Library/CloudStorage/Dropbox/My-Code/My-Vulnerable-Code-Snippets/leaks/example2/deployments/docker-compose.yaml"
+          },
+          "region" : {
+            "startLine" : 26,
+            "startColumn" : 51,
+            "endLine" : 26,
+            "endColumn" : 26
+          }
+        }
+      } ]
+    } ]
+  } ]
+}
